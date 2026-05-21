@@ -2,121 +2,138 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: #1E293B;  
+}
+
+
+body {
+    background-color: #1E293B;
     color: #F8FAFC;
-    @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
-}
-body{
-    margin: 50px;
-}
-h1{
-    font-weight: 600;
-    font-size: 40px;
+    font-family: 'Roboto Condensed', Verdana, sans-serif; 
+    padding: 40px 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
+
+header {
+    width: 100%;
+    max-width: 700px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-weight: 700;
+    font-size: 32px;
+    color: #F8FAFC;
+}
+
+
+.card-pesquisa {
+    background-color: #111827; 
+    border: 1px solid #374151;  
+    border-radius: 16px;        
+    padding: 40px;
+    width: 100%;
+    max-width: 700px;           
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3); 
+}
+
 
 .texto-motivo {
-    font-weight: 350;
-    font-size: 18px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 10px;
-    margin-bottom: 50px;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 40px;
     text-align: justify;
+    color: #9CA3AF; 
 }
+
+
 .perguntas {
-    margin-top: 60px;
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 35px;
     margin-bottom: 15px;
+    color: #F8FAFC;
 }
+
 
 .respostas {
-    margin-top: 10px;
-    margin-left: 10px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    cursor: pointer;
 }
 
+label {
+    font-size: 16px;
+    margin-left: 8px;
+    cursor: pointer;
+    color: #E5E7EB;
+}
+
+
 .charge {
-    margin-top: 50px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    background-color: transparent;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-#charge-1 {
-    background-color: #ffffff;
-    width: 75%;
-    height: 75%;
-    max-width: 600px;
-    height: 100px;          /* Altura inicial maior para parágrafos */
-    padding: 14px 20px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    color: #333;
-    font-size: 1.1rem;
-    outline: none;
-    transition: all 0.3s ease;
-    resize: vertical;
-}
-#charge-1:focus {
-    border-color: #888;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+.charge figcaption {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #9CA3AF;
+    font-style: italic;
 }
 
-#img1 {
-     width: 75%;
-    height: 75%;   
-}
-
-#img2 {
-    width: 70%;
-    height: 70%;
-}
-
-#charge-2{
-    background-color: #ffffff;
+#img1, #img2 {
     width: 100%;
-    max-width: 600px;
-    height: 100px;          /* Altura inicial maior para parágrafos */
-    padding: 14px 20px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    color: #333;
-    font-size: 1.1rem;
-    outline: none;
-    transition: all 0.3s ease;
-    resize: vertical;
-}
-#charge-2:focus {
-    border-color: #888;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    max-width: 500px; 
+    height: auto;
+    border-radius: 8px;
 }
 
-#desabafo {
-    background-color: #ffffff;
+
+#charge-1, #charge-2, #desabafo {
+    background-color: #1F2937; 
     width: 100%;
-    max-width: 600px;
-    height: 100px;          /* Altura inicial maior para parágrafos */
-    padding: 14px 20px;
-    border: 1px solid #ccc;
+    height: 120px;
+    padding: 14px;
+    border: 1px solid #4B5563;
     border-radius: 10px;
-    color: #333;
-    font-size: 1.1rem;
+    color: #F8FAFC;
+    font-size: 1rem;
     outline: none;
     transition: all 0.3s ease;
     resize: vertical;
-
+    margin-top: 10px;
 }
-  
+
+#charge-1:focus, #charge-2:focus, #desabafo:focus {
+    border-color: #0D9488; 
+    box-shadow: 0 0 0 2px rgba(13, 148, 136, 0.3);
+}
+
+
 button {
-    margin-top: 50px;
+    margin-top: 40px;
     background-color: #0D9488;
+    color: #FFFFFF;
     border: none;
-    border-radius: 6px;
-    width: 100px;
+    border-radius: 8px;
+    width: 100%; 
+    padding: 14px;
+    font-size: 18px;
+    font-weight: 600;
     cursor: pointer;
-    display: flex ;
-    flex-direction: column;
+    transition: all 0.2s ease;
+}
+
+button:hover { 
+    background-color: #0F766E; 
+    transform: translateY(-2px);
 }
