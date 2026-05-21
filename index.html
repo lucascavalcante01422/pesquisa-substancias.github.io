@@ -4,8 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulário ISA</title>
+    <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    
 </head>
 
 <body>
@@ -192,13 +193,14 @@
             <br>
 
             <figure class="charge">
-                <img src="img/charge-1.jpeg" alt="Charge-1">
+                <img src="img/charge-1.jpeg" alt="Charge-1" id="img1">
                 <figcaption>Fonte: Ilustração por ALB Filho.</figcaption>
             </figure>
             <br>
 
             <p class="perguntas"> 12- Qual mensagem essa charge quer passar?</p>
-            <textarea name="interpretacao_charge_1" id="charge-1"></textarea>
+            <textarea name="interpretacao_charge_1" id="charge-1" placeholder="digite aqui"></textarea>
+            <br>
 
             <figure class="charge">
                 <img src="img/charge-2.jpeg" alt="charge-2" id="img2">
@@ -206,7 +208,12 @@
             </figure>
 
             <p class="perguntas">13 - Qual mensagem a charge acima quer transmitir? </p>
-            <textarea name="interpretacao_charge_2" id="charge-2"></textarea>
+            <textarea class="respostas" name="interpretacao_charge_2" id="charge-2" placeholder="digite aqui"></textarea>
+            <br>
+
+            <p class="perguntas"> Como você tem se sentido em relação a isso? (Espaço livre) </p>
+            <textarea class="respostas" name="como_se_sente_em_relação_a_isso?" id="desabafo" placeholder="digite aqui"></textarea>
+            <br>
 
             <button type="submit"> Enviar Formulário </button>
         </form>
