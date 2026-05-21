@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    
+
 </head>
 
 <body>
@@ -15,213 +15,258 @@
         <h1>Uso de Álcool e Substâncias Ilha Solteira</h1>
     </header>
 
-    <div class="texto-motivo">
-        <p>Formulário feito por alunos da Etec de Ilha Solteira. Este formulário faz parte de uma pesquisa sobre o consumo de álcool e outras substâncias em Ilha Solteira. Sua participação é totalmente anônima e voluntária. Os dados serão utilizados estritamente para fins de Pesquisa Acadêmica. Não coletamos e-mails nem dados de identificação. </p>
+    <div class="card-pesquisa">
+        <div class="texto-motivo">
+            <p>Formulário feito por alunos da Etec de Ilha Solteira. Este formulário faz parte de uma pesquisa sobre o
+                consumo de álcool e outras substâncias em Ilha Solteira. Sua participação é totalmente anônima e
+                voluntária.
+                Os dados serão utilizados estritamente para fins de Pesquisa Acadêmica. Não coletamos e-mails nem dados
+                de
+                identificação. </p>
+        </div>
+
+        <div class="questions">
+            <form action="https://formspree.io/f/mzdwejbq" method="POST">
+
+                <p class="perguntas">1- Qual sua idade? </p>
+                <input id="14-17" class="respostas" name="Qual sua idade?" type="radio" value="14-17 anos">
+                <label for="14-17">14-17</label>
+                <br>
+
+                <input id="18-24" class="respostas" name="Qual sua idade?" type="radio" value="18-24 anos">
+                <label for="18-24">18-24</label>
+                <br>
+
+                <input id="25-35" class="respostas" name="Qual sua idade?" type="radio" value="25-35 anos">
+                <label for="25-35">25-35</label>
+                <br>
+
+                <input class="respostas" name="Qual sua idade?" type="radio" value="36+ anos">
+                <label for="36+">36+</label>
+                <br>
+
+                <p class="perguntas">2- Você conhece alguém que tenha dependência de alguma substância? </p>
+                <input id="q2-y" class="respostas" type="radio"
+                    name="Você conhece alguém que tenha dependência de alguma substância?" value="sim">
+                <label for="q2-y"> Sim </label>
+                <br>
+
+                <input id="q2-n" class="respostas" type="radio"
+                    name="Você conhece alguém que tenha dependência de alguma substância?" value="nao">
+                <label for="q2-n"> Não </label>
+                <br>
+
+                <p class="perguntas">3- Você considera o uso excessivo de álcool um problema na cidade? </p>
+
+                <input id="q-3s" class="respostas" type="radio"
+                    name="Você considera o uso excessivo de álcool um problema na cidade?" value="sim">
+                <label for="q-3s">Sim</label>
+                <br>
+
+                <input id="q-3n" class="respostas" type="radio"
+                    name="Você considera o uso excessivo de álcool um problema na cidade?" value="nao">
+                <label for="q-3n">Não</label>
+                <br>
+
+                <input id="q-3t" class="respostas" type="radio"
+                    name="Você considera o uso excessivo de álcool um problema na cidade?" value="talvez">
+                <label for="q-3t">Talvez</label>
+                <br>
+
+                <p class="perguntas">4 - Qual substância você observa como mais comum? </p>
+
+                <input class="respostas" id="álcool-q4" type="radio"
+                    name="Qual substância você observa como mais comum?" value="alcool">
+                <label for="álcool-q4">Álcool</label>
+                <br>
+
+                <input class="respostas" type="radio" name="Qual substância você observa como mais comum?"
+                    id="cigarro-q4" value="cigarro">
+                <label for="cigarro-q4">Cigarro</label>
+                <br>
+
+                <input class="respostas" type="radio" name="Qual substância você observa como mais comum?"
+                    id="maconha-q4" value="maconha">
+                <label for="maconha-q4"> Maconha </label>
+                <br>
+
+                <input class="respostas" type="radio" name="Qual substância você observa como mais comum?"
+                    id="cocaina-q4" value="cocaina">
+                <label for="cocaina-q4">Cocaína</label>
+                <br>
+
+                <input class="respostas" type="radio" name="Qual substância você observa como mais comum?"
+                    id="outros-q4" value="outros">
+                <label for="outros-q4">Outros</label>
+                <br>
+
+                <p class="perguntas">5 - Em quais locais o consumo parece mais frequente? </p>
+
+                <input class="respostas" type="radio" name="Em quais locais o consumo parece mais frequente?"
+                    id="festa-q5" value="festas">
+                <label for="festa-q5"> Festas </label>
+                <br>
+
+                <input class="respostas" type="radio" name="Em quais locais o consumo parece mais frequente?"
+                    id="bar-q5" value="bares">
+                <label for="bar-q5"> Bares </label>
+                <br>
+
+                <input class="respostas" type="radio" name="Em quais locais o consumo parece mais frequente?"
+                    id="escola-q5" value="ambientes-academicos">
+                <label for="escola-q5"> Faculdades/Escolas </label>
+                <br>
+
+                <input class="respostas" type="radio" name="Em quais locais o consumo parece mais frequente?"
+                    id="rua-q5" value="rua-ou-praça">
+                <label for="rua-q5"> Rua/Praça</label>
+                <br>
+
+                <p class="perguntas">6- Você acha que há fiscalização suficiente contra tráfico e a venda ilegal? </p>
+                <input class="respostas" type="radio"
+                    name="Você acha que há fiscalização suficiente contra tráfico e a venda ilegal?" id="s-q6"
+                    value="sim">
+                <label for="s-q6"> Sim </label>
+                <br>
+
+                <input class="respostas" type="radio"
+                    name="Você acha que há fiscalização suficiente contra tráfico e a venda ilegal?" id="n-q6"
+                    value="nao">
+                <label for="n-q6"> Não </label>
+                <br>
+
+                <input class="respostas" type="radio"
+                    name="Você acha que há fiscalização suficiente contra tráfico e a venda ilegal?" id="p-q6"
+                    value="parcialmente">
+                <label for="p-q6"> Parcialmente </label>
+                <br>
+
+                <p class="perguntas">7- O que mais influência o início do consumo? </p>
+
+                <input class="respostas" type="radio" name="O que mais influência o início do consumo?" id="amigos-q7"
+                    value="amigos">
+                <label for="amigos-q7"> Amigos </label>
+                <br>
+
+                <input class="respostas" type="radio" name="O que mais influência o início do consumo?" id="fami-q7"
+                    value="familia">
+                <label for="fami-q7"> Família </label>
+                <br>
+
+                <input class="respostas" type="radio" name="O que mais influência o início do consumo?" id="social-q7"
+                    value="redes-sociais">
+                <label for="social-q7"> Redes sociais </label>
+                <br>
+
+                <input class="respostas" type="radio" name="O que mais influência o início do consumo?"
+                    id="curiosidade-q7" value="curiosidade">
+                <label for="curiosidade-q7"> Curiosidade </label>
+
+                <p class="perguntas">8- A cidade oferece apoio o suficiente para dependentes químicos? </p>
+
+                <input class="respostas" type="radio"
+                    name="A cidade oferece apoio o suficiente para dependentes químicos?" id="s-q8" value="sim">
+                <label for="s-q8"> Sim </label>
+                <br>
+
+                <input class="respostas" type="radio"
+                    name="A cidade oferece apoio o suficiente para dependentes químicos?" id="n-q8" value="não">
+                <label for="n-q8"> Não </label>
+                <br>
+
+                <input class="respostas" type="radio"
+                    name="A cidade oferece apoio o suficiente para dependentes químicos?" id="ns-q8" value="não-sei">
+                <label for="ns-q8">Não sei</label>
+                <br>
+
+                <p class="perguntas">9- Quais consequências você mais percebe? </p>
+
+                <input class="respostas" type="radio" name="Quais consequências você mais percebe?" id="violencia-q9"
+                    value="violencia">
+                <label for="violencia-q9"> Violência </label>
+                <br>
+
+                <input class="respostas" type="radio" name="Quais consequências você mais percebe?" id="acidente-q9"
+                    value="acidentes">
+                <label for="acidenteq9"> Acidentes </label>
+                <br>
+
+                <input class="respostas" type="radio" name="Quais consequências você mais percebe?" id="pf-q9"
+                    value="problemas-familiares">
+                <label for="pf-q9">Problemas familiares</label>
+                <br>
+
+                <input class="respostas" type="radio" name="Quais consequências você mais percebe?" id="problemas-q9"
+                    value="problemas-de-saude">
+                <label for="problemas-q9">Problemas de saúde</label>
+                <br>
+
+                <p class="perguntas">10- Você já presenciou brigas relacionadas ao álcool? </p>
+
+                <input class="respostas" type="radio" name="Você já presenciou brigas relacionadas ao álcool?"
+                    id="mais-q10" value="sim-mais-de-uma-vez">
+                <label for="mais-q10"> Sim, mais de uma vez </label>
+                <br>
+
+                <input class="respostas" type="radio" name="Você já presenciou brigas relacionadas ao álcool?"
+                    id="s-q10" value="só uma vez">
+                <label for="s-q10"> Sim, uma vez apenas </label>
+                <br>
+
+                <input class="respostas" type="radio" name="Você já presenciou brigas relacionadas ao álcool?"
+                    id="nunca-q10" value="nunca">
+                <label for="nunca-q10"> Nunca </label>
+                <br>
+
+                <p class="perguntas">11 - Já viu acidentes causados por embriaguez? </p>
+
+                <input class="respostas" type="radio" name="Já viu acidentes causados por embriaguez?" id="s-q11"
+                    value="sim">
+                <label for="s-q11"> Sim </label>
+                <br>
+
+                <input class="respostas" type="radio" name="Já viu acidentes causados por embriaguez?" id="rp-q11"
+                    value="apenas-em-noticias">
+                <label for="rp-q11"> Apenas em notícias </label>
+                <br>
+
+                <input class="respostas" type="radio" name="Já viu acidentes causados por embriaguez?" id="n-q11"
+                    value="nunca">
+                <label for="n-q11"> Nunca </label>
+                <br>
+
+                <figure class="charge">
+                    <img src="img/charge-1.jpeg" alt="Charge-1" id="img1">
+                    <figcaption>Fonte: Ilustração por ALB Filho.</figcaption>
+                </figure>
+                <br>
+
+                <p class="perguntas"> 12- Qual mensagem essa charge quer passar?</p>
+                <textarea name="interpretacao_charge_1" id="charge-1" placeholder="digite aqui"></textarea>
+                <br>
+
+                <figure class="charge">
+                    <img src="img/charge-2.jpeg" alt="charge-2" id="img2">
+                    <figcaption>Fonte: Charge por Nardo Matta, para o Brasil 247</figcaption>
+                </figure>
+
+                <p class="perguntas">13 - Qual mensagem a charge acima quer transmitir? </p>
+                <textarea class="respostas" name="interpretacao_charge_2" id="charge-2"
+                    placeholder="digite aqui"></textarea>
+                <br>
+
+                <p class="perguntas"> Como você tem se sentido em relação a isso? (Espaço livre) </p>
+                <textarea class="respostas" name="como_se_sente_em_relação_a_isso?" id="desabafo"
+                    placeholder="digite aqui"></textarea>
+                <br>
+
+                <button type="submit"> Enviar Formulário </button>
+            </form>
+
+
+
+        </div>
     </div>
-
-    <div class="questions">
-        <form action="https://formspree.io/f/mzdwejbq" method="POST">
-
-            <p class="perguntas">1- Qual sua idade? </p>
-            <input id="14-17" class="respostas" name="Qual sua idade?" type="radio" value="14-17 anos">
-            <label for="14-17">14-17</label>
-            <br>
-
-            <input id="18-24" class="respostas" name="Qual sua idade?" type="radio" value="18-24 anos">
-            <label for="18-24">18-24</label>
-            <br>
-
-            <input id="25-35" class="respostas" name="Qual sua idade?" type="radio" value="25-35 anos">
-            <label for="25-35">25-35</label>
-            <br>
-
-            <input class="respostas" name="Qual sua idade?" type="radio" value="36+ anos">
-            <label for="36+">36+</label>
-            <br>
-
-            <p class="perguntas">2- Você conhece alguém que tenha dependência de alguma substância? </p>
-            <input id="q2-y" class="respostas" type="radio" name="Você conhece alguém que tenha dependência de alguma substância?" value="sim">
-            <label for="q2-y"> Sim </label>
-            <br>
-
-            <input id="q2-n" class="respostas" type="radio" name="Você conhece alguém que tenha dependência de alguma substância?" value="nao">
-            <label for="q2-n"> Não </label>
-            <br>
-
-            <p class="perguntas">3- Você considera o uso excessivo de álcool um problema na cidade? </p>
-
-            <input id="q-3s" class="respostas" type="radio" name="Você considera o uso excessivo de álcool um problema na cidade?" value="sim">
-            <label for="q-3s">Sim</label>
-            <br>
-
-            <input id="q-3n" class="respostas" type="radio" name="Você considera o uso excessivo de álcool um problema na cidade?" value="nao">
-            <label for="q-3n">Não</label>
-            <br>
-
-            <input id="q-3t" class="respostas" type="radio" name="Você considera o uso excessivo de álcool um problema na cidade?" value="talvez">
-            <label for="q-3t">Talvez</label>
-            <br>
-
-            <p class="perguntas">4 - Qual substância você observa como mais comum? </p>
-
-            <input class="respostas" id="álcool-q4" type="radio" name="Qual substância você observa como mais comum?" value="alcool">
-            <label for="álcool-q4">Álcool</label>
-            <br>
-
-            <input class="respostas" type="radio" name="Qual substância você observa como mais comum?" id="cigarro-q4" value="cigarro">
-            <label for="cigarro-q4">Cigarro</label>
-            <br>
-
-            <input class="respostas" type="radio" name="Qual substância você observa como mais comum?" id="maconha-q4" value="maconha">
-            <label for="maconha-q4"> Maconha </label>
-            <br>
-
-            <input class="respostas" type="radio" name="Qual substância você observa como mais comum?" id="cocaina-q4" value="cocaina">
-            <label for="cocaina-q4">Cocaína</label>
-            <br>
-
-            <input class="respostas" type="radio" name="Qual substância você observa como mais comum?" id="outros-q4" value="outros">
-            <label for="outros-q4">Outros</label>
-            <br>
-
-            <p class="perguntas">5 - Em quais locais o consumo parece mais frequente? </p>
-
-            <input class="respostas" type="radio" name="Em quais locais o consumo parece mais frequente?" id="festa-q5" value="festas">
-            <label for="festa-q5"> Festas </label>
-            <br>
-
-            <input class="respostas" type="radio" name="Em quais locais o consumo parece mais frequente?" id="bar-q5" value="bares">
-            <label for="bar-q5"> Bares </label>
-            <br>
-
-            <input class="respostas" type="radio" name="Em quais locais o consumo parece mais frequente?" id="escola-q5" value="ambientes-academicos">
-            <label for="escola-q5"> Faculdades/Escolas </label>
-            <br>
-
-            <input class="respostas" type="radio" name="Em quais locais o consumo parece mais frequente?" id="rua-q5" value="rua-ou-praça">
-            <label for="rua-q5"> Rua/Praça</label>
-            <br>
-
-            <p class="perguntas">6- Você acha que há fiscalização suficiente contra tráfico e a venda ilegal? </p>
-            <input class="respostas" type="radio" name="Você acha que há fiscalização suficiente contra tráfico e a venda ilegal?" id="s-q6" value="sim">
-            <label for="s-q6"> Sim </label>
-            <br>
-
-            <input class="respostas" type="radio" name="Você acha que há fiscalização suficiente contra tráfico e a venda ilegal?" id="n-q6" value="nao">
-            <label for="n-q6"> Não </label>
-            <br>
-
-            <input class="respostas" type="radio" name="Você acha que há fiscalização suficiente contra tráfico e a venda ilegal?" id="p-q6" value="parcialmente">
-            <label for="p-q6"> Parcialmente </label>
-            <br>
-
-            <p class="perguntas">7- O que mais influência o início do consumo? </p>
-
-            <input class="respostas" type="radio" name="O que mais influência o início do consumo?" id="amigos-q7" value="amigos">
-            <label for="amigos-q7"> Amigos </label>
-            <br>
-
-            <input class="respostas" type="radio" name="O que mais influência o início do consumo?" id="fami-q7" value="familia">
-            <label for="fami-q7"> Família </label>
-            <br>
-
-            <input class="respostas" type="radio" name="O que mais influência o início do consumo?" id="social-q7" value="redes-sociais">
-            <label for="social-q7"> Redes sociais </label>
-            <br>
-
-            <input class="respostas" type="radio" name="O que mais influência o início do consumo?" id="curiosidade-q7" value="curiosidade">
-            <label for="curiosidade-q7"> Curiosidade </label>
-
-            <p class="perguntas">8- A cidade oferece apoio o suficiente para dependentes químicos? </p>
-
-            <input class="respostas" type="radio" name="A cidade oferece apoio o suficiente para dependentes químicos?" id="s-q8" value="sim">
-            <label for="s-q8"> Sim </label>
-            <br>
-
-            <input class="respostas" type="radio" name="A cidade oferece apoio o suficiente para dependentes químicos?" id="n-q8" value="não">
-            <label for="n-q8"> Não </label>
-            <br>
-
-            <input class="respostas" type="radio" name="A cidade oferece apoio o suficiente para dependentes químicos?" id="ns-q8" value="não-sei">
-            <label for="ns-q8">Não sei</label>
-            <br>
-
-            <p class="perguntas">9- Quais consequências você mais percebe? </p>
-
-            <input class="respostas" type="radio" name="Quais consequências você mais percebe?" id="violencia-q9" value="violencia">
-            <label for="violencia-q9"> Violência </label>
-            <br>
-
-            <input class="respostas" type="radio" name="Quais consequências você mais percebe?" id="acidente-q9" value="acidentes">
-            <label for="acidenteq9"> Acidentes </label>
-            <br>
-
-            <input class="respostas" type="radio" name="Quais consequências você mais percebe?" id="pf-q9" value="problemas-familiares">
-            <label for="pf-q9">Problemas familiares</label>
-            <br>
-
-            <input class="respostas" type="radio" name="Quais consequências você mais percebe?" id="problemas-q9" value="problemas-de-saude">
-            <label for="problemas-q9">Problemas de saúde</label>
-            <br>
-
-            <p class="perguntas">10- Você já presenciou brigas relacionadas ao álcool? </p>
-
-            <input class="respostas" type="radio" name="Você já presenciou brigas relacionadas ao álcool?" id="mais-q10" value="sim-mais-de-uma-vez">
-            <label for="mais-q10"> Sim, mais de uma vez </label>
-            <br>
-
-            <input class="respostas" type="radio" name="Você já presenciou brigas relacionadas ao álcool?" id="s-q10" value="só uma vez">
-            <label for="s-q10"> Sim, uma vez apenas </label>
-            <br>
-
-            <input class="respostas" type="radio" name="Você já presenciou brigas relacionadas ao álcool?" id="nunca-q10" value="nunca">
-            <label for="nunca-q10"> Nunca </label>
-            <br>
-
-            <p class="perguntas">11 - Já viu acidentes causados por embriaguez? </p>
-
-            <input class="respostas" type="radio" name="Já viu acidentes causados por embriaguez?" id="s-q11" value="sim">
-            <label for="s-q11"> Sim </label>
-            <br>
-
-            <input class="respostas" type="radio" name="Já viu acidentes causados por embriaguez?" id="rp-q11" value="apenas-em-noticias">
-            <label for="rp-q11"> Apenas em notícias </label>
-            <br>
-
-            <input class="respostas" type="radio" name="Já viu acidentes causados por embriaguez?" id="n-q11" value="nunca">
-            <label for="n-q11"> Nunca </label>
-            <br>
-
-            <figure class="charge">
-                <img src="img/charge-1.jpeg" alt="Charge-1" id="img1">
-                <figcaption>Fonte: Ilustração por ALB Filho.</figcaption>
-            </figure>
-            <br>
-
-            <p class="perguntas"> 12- Qual mensagem essa charge quer passar?</p>
-            <textarea name="interpretacao_charge_1" id="charge-1" placeholder="digite aqui"></textarea>
-            <br>
-
-            <figure class="charge">
-                <img src="img/charge-2.jpeg" alt="charge-2" id="img2">
-                <figcaption>Fonte: Charge por Nardo Matta, para o Brasil 247</figcaption>
-            </figure>
-
-            <p class="perguntas">13 - Qual mensagem a charge acima quer transmitir? </p>
-            <textarea class="respostas" name="interpretacao_charge_2" id="charge-2" placeholder="digite aqui"></textarea>
-            <br>
-
-            <p class="perguntas"> Como você tem se sentido em relação a isso? (Espaço livre) </p>
-            <textarea class="respostas" name="como_se_sente_em_relação_a_isso?" id="desabafo" placeholder="digite aqui"></textarea>
-            <br>
-
-            <button type="submit"> Enviar Formulário </button>
-        </form>
-
-
-
-    </div>
-
 
 </body>
 
